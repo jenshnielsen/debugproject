@@ -1,0 +1,4 @@
+build
+dist
+debugproject.egg-info/
+debugproject/__pycache__/
