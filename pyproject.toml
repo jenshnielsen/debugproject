@@ -18,3 +18,7 @@ dependencies = [
 [tool.versioningit.vcs]
 method = "git"
 match = ["v*"]
+
+[tool.versioningit.onbuild]
+source-file = "debugproject/_version.py"
+build-file = "debugproject/_version.py"
