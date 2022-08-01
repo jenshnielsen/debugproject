@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools >=61.0",
+    "setuptools @ git+https://github.com/pypa/setuptools@feature/pep660",
     "versioningit ~= 2.0.0",
 ]
 build-backend = 'setuptools.build_meta'
