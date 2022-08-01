@@ -1,7 +1,7 @@
 [build-system]
 requires = [
-    "setuptools >= 61.0",
-    "wheel >= 0.29.0",
+    "setuptools >=61.0",
+    "versioningit ~= 2.0.0",
 ]
 build-backend = 'setuptools.build_meta'
 
@@ -9,4 +9,12 @@ build-backend = 'setuptools.build_meta'
 name = "debugproject"
 license = {text = "MIT"}
 requires-python = ">=3.7"
-version = "0.0.1"
+dynamic = ["version"]
+dependencies = [
+    "versioningit>=1.1.0",
+]
+
+
+[tool.versioningit.vcs]
+method = "git"
+match = ["v*"]
